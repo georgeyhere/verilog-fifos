@@ -33,6 +33,7 @@ Tested w/ SystemVerilog testbench in Vivado Simulator. Formal using formal prope
 
 - Assertions check the following:
     - internal values on reset for read/write clock domains
+    - FIFO fill level
     - empty and full flag behavior
     - read and write pointer behavior 
     - cdc gray-code counters and registers
