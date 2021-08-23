@@ -31,7 +31,7 @@ Tested w/ SystemVerilog testbench in Vivado Simulator. Formal using formal prope
     - tests read during write
     - tests read until empty
 
-Assertions check the following:
+- Assertions check the following:
     - internal values on reset for read/write clock domains
     - empty and full flag behavior
     - read and write pointer behavior 
@@ -65,7 +65,7 @@ __Testing and Verification__
 
 Verified using SV concurrent assertions and SymbiYosys. 
 
-Assertions check the following:
+- Assertions check the following:
     - FIFO fill level 
     - Empty flag behavior
     - Full flag behavior
