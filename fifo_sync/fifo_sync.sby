@@ -1,0 +1,16 @@
+[tasks]
+prove_fifo_sync
+
+[options]
+mode prove
+depth 20
+
+[engines]
+prove_fifo_sync: smtbmc
+
+[script]
+read -formal -DFIFO_SYNC fifo_sync.v
+prep -top fifo_sync
+
+[files]
+fifo_sync.v
