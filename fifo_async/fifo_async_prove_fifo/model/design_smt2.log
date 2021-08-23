@@ -1,0 +1,74 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+4251 (git sha1 e6f3d1c2, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_smt2.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+3. Printing statistics.
+
+=== fifo_async ===
+
+   Number of wires:                420
+   Number of wire bits:            696
+   Number of public wires:          53
+   Number of public wire bits:     162
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                464
+     $add                            5
+     $and                            2
+     $anyconst                       5
+     $anyseq                        49
+     $assert                        42
+     $assume                        13
+     $eq                            33
+     $eqx                            3
+     $ff                            92
+     $ge                             2
+     $gt                             2
+     $initstate                      1
+     $le                             5
+     $logic_and                     37
+     $logic_not                     27
+     $logic_or                      16
+     $lt                             4
+     $mem                            1
+     $mux                          107
+     $ne                             1
+     $not                            4
+     $reduce_bool                    2
+     $sub                            3
+     $xor                            8
+
+4. Executing SMT2 backend.
+Creating SMT-LIBv2 representation of module fifo_async.
+
+End of script. Logfile hash: c66e0ad316, CPU: user 0.03s system 0.00s, MEM: 6.27 MB peak
+Yosys 0.9+4251 (git sha1 e6f3d1c2, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 49% 2x write_smt2 (0 sec), 49% 2x read_ilang (0 sec), ...

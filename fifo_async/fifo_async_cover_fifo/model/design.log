@@ -1,0 +1,1167 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+4251 (git sha1 e6f3d1c2, clang 10.0.0-4ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `../model/design.ys' --
+
+1. Executing Verilog-2005 frontend: fifo_async.v
+Parsing formal Verilog input from `fifo_async.v' to AST representation.
+Generating RTLIL representation for module `\fifo_async'.
+Successfully finished Verilog frontend.
+
+2. Executing PREP pass.
+
+2.1. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1.1. Analyzing design hierarchy..
+Top module:  \fifo_async
+
+2.1.2. Analyzing design hierarchy..
+Top module:  \fifo_async
+Removed 0 unused modules.
+Module fifo_async directly or indirectly contains formal properties -> setting "keep" attribute.
+
+2.2. Executing PROC pass (convert processes to netlists).
+
+2.2.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.2.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$fifo_async.v:480$440 in module fifo_async.
+Marked 1 switch rules as full_case in process $proc$fifo_async.v:474$436 in module fifo_async.
+Marked 3 switch rules as full_case in process $proc$fifo_async.v:461$424 in module fifo_async.
+Marked 3 switch rules as full_case in process $proc$fifo_async.v:451$412 in module fifo_async.
+Marked 1 switch rules as full_case in process $proc$fifo_async.v:390$363 in module fifo_async.
+Marked 1 switch rules as full_case in process $proc$fifo_async.v:383$361 in module fifo_async.
+Marked 1 switch rules as full_case in process $proc$fifo_async.v:166$125 in module fifo_async.
+Marked 1 switch rules as full_case in process $proc$fifo_async.v:158$121 in module fifo_async.
+Marked 1 switch rules as full_case in process $proc$fifo_async.v:150$116 in module fifo_async.
+Marked 1 switch rules as full_case in process $proc$fifo_async.v:137$114 in module fifo_async.
+Marked 1 switch rules as full_case in process $proc$fifo_async.v:121$111 in module fifo_async.
+Marked 1 switch rules as full_case in process $proc$fifo_async.v:113$107 in module fifo_async.
+Marked 1 switch rules as full_case in process $proc$fifo_async.v:105$102 in module fifo_async.
+Marked 1 switch rules as full_case in process $proc$fifo_async.v:92$100 in module fifo_async.
+Marked 1 switch rules as full_case in process $proc$fifo_async.v:80$91 in module fifo_async.
+Removed a total of 0 dead cases.
+
+2.2.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 14 redundant assignments.
+Promoted 140 assignments to connections.
+
+2.2.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$710'.
+  Set init value: $formal$fifo_async.v:570$89_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$708'.
+  Set init value: $formal$fifo_async.v:567$88_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$706'.
+  Set init value: $formal$fifo_async.v:564$87_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$704'.
+  Set init value: $formal$fifo_async.v:556$85_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$702'.
+  Set init value: $formal$fifo_async.v:552$84_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$700'.
+  Set init value: $formal$fifo_async.v:549$83_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$698'.
+  Set init value: $formal$fifo_async.v:538$82_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$696'.
+  Set init value: $formal$fifo_async.v:528$81_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$694'.
+  Set init value: $formal$fifo_async.v:517$80_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$692'.
+  Set init value: $formal$fifo_async.v:355$67_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$690'.
+  Set init value: $formal$fifo_async.v:350$66_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$688'.
+  Set init value: $formal$fifo_async.v:345$65_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$686'.
+  Set init value: $formal$fifo_async.v:340$64_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$684'.
+  Set init value: $formal$fifo_async.v:335$63_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$682'.
+  Set init value: $formal$fifo_async.v:314$60_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$680'.
+  Set init value: $formal$fifo_async.v:313$59_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$678'.
+  Set init value: $formal$fifo_async.v:312$58_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$676'.
+  Set init value: $formal$fifo_async.v:310$57_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$674'.
+  Set init value: $formal$fifo_async.v:309$56_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$672'.
+  Set init value: $formal$fifo_async.v:308$55_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$670'.
+  Set init value: $formal$fifo_async.v:306$54_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$668'.
+  Set init value: $formal$fifo_async.v:305$53_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$666'.
+  Set init value: $formal$fifo_async.v:299$52_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$664'.
+  Set init value: $formal$fifo_async.v:298$51_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$662'.
+  Set init value: $formal$fifo_async.v:297$50_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$660'.
+  Set init value: $formal$fifo_async.v:295$49_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$658'.
+  Set init value: $formal$fifo_async.v:294$48_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$656'.
+  Set init value: $formal$fifo_async.v:292$47_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$654'.
+  Set init value: $formal$fifo_async.v:291$46_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$652'.
+  Set init value: $formal$fifo_async.v:290$45_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$650'.
+  Set init value: $formal$fifo_async.v:288$44_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$648'.
+  Set init value: $formal$fifo_async.v:287$43_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$646'.
+  Set init value: $formal$fifo_async.v:277$42_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$644'.
+  Set init value: $formal$fifo_async.v:274$41_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$642'.
+  Set init value: $formal$fifo_async.v:273$40_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$640'.
+  Set init value: $formal$fifo_async.v:268$39_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$638'.
+  Set init value: $formal$fifo_async.v:267$38_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$636'.
+  Set init value: $formal$fifo_async.v:266$37_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$634'.
+  Set init value: $formal$fifo_async.v:257$36_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$632'.
+  Set init value: $formal$fifo_async.v:253$35_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$630'.
+  Set init value: $formal$fifo_async.v:249$34_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$628'.
+  Set init value: $formal$fifo_async.v:244$33_EN = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$627'.
+  Set init value: \f_r2w_wbin = 5'00000
+  Set init value: \f_r1w_wbin = 5'00000
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$626'.
+  Set init value: \f_w2r_rbin = 5'00000
+  Set init value: \f_w1r_rbin = 5'00000
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$617'.
+  Set init value: \f_past_valid_gbl = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$616'.
+  Set init value: \f_past_valid_wr = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$615'.
+  Set init value: \f_past_valid_rd = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$614'.
+  Set init value: \o_wfull = 1'0
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$613'.
+  Set init value: \wptr = 5'00000
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$612'.
+  Set init value: \wbin = 5'00000
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$611'.
+  Set init value: \wq1_rptr = 5'00000
+  Set init value: \wq2_rptr = 5'00000
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$610'.
+  Set init value: \o_rempty = 1'1
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$609'.
+  Set init value: \rptr = 5'00000
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$608'.
+  Set init value: \rbin = 5'00000
+Found init rule in `\fifo_async.$proc$fifo_async.v:0$607'.
+  Set init value: \rq1_wptr = 5'00000
+  Set init value: \rq2_wptr = 5'00000
+
+2.2.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \i_rrstn in `\fifo_async.$proc$fifo_async.v:390$363'.
+Found async reset \i_wrstn in `\fifo_async.$proc$fifo_async.v:383$361'.
+Found async reset \i_wrstn in `\fifo_async.$proc$fifo_async.v:166$125'.
+Found async reset \i_wrstn in `\fifo_async.$proc$fifo_async.v:158$121'.
+Found async reset \i_wrstn in `\fifo_async.$proc$fifo_async.v:150$116'.
+Found async reset \i_wrstn in `\fifo_async.$proc$fifo_async.v:137$114'.
+Found async reset \i_rrstn in `\fifo_async.$proc$fifo_async.v:121$111'.
+Found async reset \i_rrstn in `\fifo_async.$proc$fifo_async.v:113$107'.
+Found async reset \i_rrstn in `\fifo_async.$proc$fifo_async.v:105$102'.
+Found async reset \i_rrstn in `\fifo_async.$proc$fifo_async.v:92$100'.
+
+2.2.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$710'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$708'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$706'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$704'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$702'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$700'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$698'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$696'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$694'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$692'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$690'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$688'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$686'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$684'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$682'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$680'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$678'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$676'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$674'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$672'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$670'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$668'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$666'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$664'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$662'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$660'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$658'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$656'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$654'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$652'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$650'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$648'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$646'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$644'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$642'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$640'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$638'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$636'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$634'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$632'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$630'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$628'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$627'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$626'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$622'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$618'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$617'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$616'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$615'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$614'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$613'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$612'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$611'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$610'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$609'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$608'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:0$607'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:570$541'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:567$538'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:563$532'.
+     1/2: $0$formal$fifo_async.v:564$87_EN[0:0]$535
+     2/2: $0$formal$fifo_async.v:564$87_CHECK[0:0]$534
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:559$529'.
+     1/2: $0$formal$fifo_async.v:560$86_EN[0:0]$531
+     2/2: $0$formal$fifo_async.v:560$86_CHECK[0:0]$530
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:555$523'.
+     1/2: $0$formal$fifo_async.v:556$85_EN[0:0]$526
+     2/2: $0$formal$fifo_async.v:556$85_CHECK[0:0]$525
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:552$520'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:549$517'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:513$474'.
+     1/6: $0$formal$fifo_async.v:517$80_EN[0:0]$484
+     2/6: $0$formal$fifo_async.v:517$80_CHECK[0:0]$483
+     3/6: $0$formal$fifo_async.v:528$81_EN[0:0]$486
+     4/6: $0$formal$fifo_async.v:528$81_CHECK[0:0]$485
+     5/6: $0$formal$fifo_async.v:538$82_EN[0:0]$488
+     6/6: $0$formal$fifo_async.v:538$82_CHECK[0:0]$487
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:506$466'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:501$460'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:497$452'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:493$446'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:486$444'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:480$440'.
+     1/1: $1\f_second_in_fifo[0:0]
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:474$436'.
+     1/1: $1\f_first_in_fifo[0:0]
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:461$424'.
+     1/3: $3\f_next_valid[0:0]
+     2/3: $2\f_next_valid[0:0]
+     3/3: $1\f_next_valid[0:0]
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:451$412'.
+     1/3: $3\f_addr_valid[0:0]
+     2/3: $2\f_addr_valid[0:0]
+     3/3: $1\f_addr_valid[0:0]
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:419$404'.
+     1/2: $0$formal$fifo_async.v:420$79_EN[0:0]$406
+     2/2: $0$formal$fifo_async.v:420$79_CHECK[0:0]$405
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:415$399'.
+     1/2: $0$formal$fifo_async.v:416$78_EN[0:0]$401
+     2/2: $0$formal$fifo_async.v:416$78_CHECK[0:0]$400
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:410$395'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:408$391'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:402$383'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:400$377'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:398$371'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:396$365'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:390$363'.
+     1/1: { $0\f_r2w_wbin[4:0] $0\f_r1w_wbin[4:0] }
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:383$361'.
+     1/1: { $0\f_w2r_rbin[4:0] $0\f_w1r_rbin[4:0] }
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:370$355'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:365$348'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:361$342'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:359$336'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:354$329'.
+     1/2: $0$formal$fifo_async.v:355$67_EN[0:0]$331
+     2/2: $0$formal$fifo_async.v:355$67_CHECK[0:0]$330
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:349$325'.
+     1/2: $0$formal$fifo_async.v:350$66_EN[0:0]$327
+     2/2: $0$formal$fifo_async.v:350$66_CHECK[0:0]$326
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:344$318'.
+     1/2: $0$formal$fifo_async.v:345$65_EN[0:0]$320
+     2/2: $0$formal$fifo_async.v:345$65_CHECK[0:0]$319
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:339$314'.
+     1/2: $0$formal$fifo_async.v:340$64_EN[0:0]$316
+     2/2: $0$formal$fifo_async.v:340$64_CHECK[0:0]$315
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:335$310'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:304$282'.
+     1/16: $0$formal$fifo_async.v:305$53_EN[0:0]$284
+     2/16: $0$formal$fifo_async.v:305$53_CHECK[0:0]$283
+     3/16: $0$formal$fifo_async.v:306$54_EN[0:0]$286
+     4/16: $0$formal$fifo_async.v:306$54_CHECK[0:0]$285
+     5/16: $0$formal$fifo_async.v:308$55_EN[0:0]$288
+     6/16: $0$formal$fifo_async.v:308$55_CHECK[0:0]$287
+     7/16: $0$formal$fifo_async.v:309$56_EN[0:0]$290
+     8/16: $0$formal$fifo_async.v:309$56_CHECK[0:0]$289
+     9/16: $0$formal$fifo_async.v:310$57_EN[0:0]$292
+    10/16: $0$formal$fifo_async.v:310$57_CHECK[0:0]$291
+    11/16: $0$formal$fifo_async.v:312$58_EN[0:0]$294
+    12/16: $0$formal$fifo_async.v:312$58_CHECK[0:0]$293
+    13/16: $0$formal$fifo_async.v:313$59_EN[0:0]$296
+    14/16: $0$formal$fifo_async.v:313$59_CHECK[0:0]$295
+    15/16: $0$formal$fifo_async.v:314$60_EN[0:0]$298
+    16/16: $0$formal$fifo_async.v:314$60_CHECK[0:0]$297
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:286$249'.
+     1/20: $0$formal$fifo_async.v:287$43_EN[0:0]$251
+     2/20: $0$formal$fifo_async.v:287$43_CHECK[0:0]$250
+     3/20: $0$formal$fifo_async.v:288$44_EN[0:0]$253
+     4/20: $0$formal$fifo_async.v:288$44_CHECK[0:0]$252
+     5/20: $0$formal$fifo_async.v:290$45_EN[0:0]$255
+     6/20: $0$formal$fifo_async.v:290$45_CHECK[0:0]$254
+     7/20: $0$formal$fifo_async.v:291$46_EN[0:0]$257
+     8/20: $0$formal$fifo_async.v:291$46_CHECK[0:0]$256
+     9/20: $0$formal$fifo_async.v:292$47_EN[0:0]$259
+    10/20: $0$formal$fifo_async.v:292$47_CHECK[0:0]$258
+    11/20: $0$formal$fifo_async.v:294$48_EN[0:0]$261
+    12/20: $0$formal$fifo_async.v:294$48_CHECK[0:0]$260
+    13/20: $0$formal$fifo_async.v:295$49_EN[0:0]$263
+    14/20: $0$formal$fifo_async.v:295$49_CHECK[0:0]$262
+    15/20: $0$formal$fifo_async.v:297$50_EN[0:0]$265
+    16/20: $0$formal$fifo_async.v:297$50_CHECK[0:0]$264
+    17/20: $0$formal$fifo_async.v:298$51_EN[0:0]$267
+    18/20: $0$formal$fifo_async.v:298$51_CHECK[0:0]$266
+    19/20: $0$formal$fifo_async.v:299$52_EN[0:0]$269
+    20/20: $0$formal$fifo_async.v:299$52_CHECK[0:0]$268
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:264$207'.
+     1/12: $0$formal$fifo_async.v:266$37_EN[0:0]$217
+     2/12: $0$formal$fifo_async.v:266$37_CHECK[0:0]$216
+     3/12: $0$formal$fifo_async.v:267$38_EN[0:0]$219
+     4/12: $0$formal$fifo_async.v:267$38_CHECK[0:0]$218
+     5/12: $0$formal$fifo_async.v:268$39_EN[0:0]$221
+     6/12: $0$formal$fifo_async.v:268$39_CHECK[0:0]$220
+     7/12: $0$formal$fifo_async.v:273$40_EN[0:0]$223
+     8/12: $0$formal$fifo_async.v:273$40_CHECK[0:0]$222
+     9/12: $0$formal$fifo_async.v:274$41_EN[0:0]$225
+    10/12: $0$formal$fifo_async.v:274$41_CHECK[0:0]$224
+    11/12: $0$formal$fifo_async.v:277$42_EN[0:0]$227
+    12/12: $0$formal$fifo_async.v:277$42_CHECK[0:0]$226
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:256$202'.
+     1/2: $0$formal$fifo_async.v:257$36_EN[0:0]$204
+     2/2: $0$formal$fifo_async.v:257$36_CHECK[0:0]$203
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:252$187'.
+     1/2: $0$formal$fifo_async.v:253$35_EN[0:0]$191
+     2/2: $0$formal$fifo_async.v:253$35_CHECK[0:0]$190
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:248$172'.
+     1/2: $0$formal$fifo_async.v:249$34_EN[0:0]$176
+     2/2: $0$formal$fifo_async.v:249$34_CHECK[0:0]$175
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:244$158'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:230$151'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:224$148'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:217$141'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:203$132'.
+     1/2: $0$formal$fifo_async.v:204$26_EN[0:0]$134
+     2/2: $0$formal$fifo_async.v:204$26_CHECK[0:0]$133
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:201$131'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:198$130'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:195$129'.
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:166$125'.
+     1/1: $0\o_wfull[0:0]
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:158$121'.
+     1/1: $0\wptr[4:0]
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:150$116'.
+     1/1: $0\wbin[4:0]
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:137$114'.
+     1/1: { $0\wq2_rptr[4:0] $0\wq1_rptr[4:0] }
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:121$111'.
+     1/1: $0\o_rempty[0:0]
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:113$107'.
+     1/1: $0\rptr[4:0]
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:105$102'.
+     1/1: $0\rbin[4:0]
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:92$100'.
+     1/1: { $0\rq2_wptr[4:0] $0\rq1_wptr[4:0] }
+Creating decoders for process `\fifo_async.$proc$fifo_async.v:80$91'.
+     1/3: $1$memwr$\mem$fifo_async.v:81$25_EN[1:0]$99
+     2/3: $1$memwr$\mem$fifo_async.v:81$25_DATA[1:0]$98
+     3/3: $1$memwr$\mem$fifo_async.v:81$25_ADDR[3:0]$97
+
+2.2.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:332$61_CHECK' from process `\fifo_async.$proc$fifo_async.v:0$622'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:332$61_EN' from process `\fifo_async.$proc$fifo_async.v:0$622'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:241$31_CHECK' from process `\fifo_async.$proc$fifo_async.v:0$618'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:241$31_EN' from process `\fifo_async.$proc$fifo_async.v:0$618'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:560$86_CHECK' from process `\fifo_async.$proc$fifo_async.v:559$529'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:560$86_EN' from process `\fifo_async.$proc$fifo_async.v:559$529'.
+No latch inferred for signal `\fifo_async.\f_read_second' from process `\fifo_async.$proc$fifo_async.v:506$466'.
+No latch inferred for signal `\fifo_async.\f_wait_for_second_read' from process `\fifo_async.$proc$fifo_async.v:501$460'.
+No latch inferred for signal `\fifo_async.\f_read_first' from process `\fifo_async.$proc$fifo_async.v:497$452'.
+No latch inferred for signal `\fifo_async.\f_wait_for_first_read' from process `\fifo_async.$proc$fifo_async.v:493$446'.
+No latch inferred for signal `\fifo_async.\f_both_in_fifo' from process `\fifo_async.$proc$fifo_async.v:486$444'.
+No latch inferred for signal `\fifo_async.\f_second_in_fifo' from process `\fifo_async.$proc$fifo_async.v:480$440'.
+No latch inferred for signal `\fifo_async.\f_first_in_fifo' from process `\fifo_async.$proc$fifo_async.v:474$436'.
+No latch inferred for signal `\fifo_async.\f_next_valid' from process `\fifo_async.$proc$fifo_async.v:461$424'.
+No latch inferred for signal `\fifo_async.\f_addr_valid' from process `\fifo_async.$proc$fifo_async.v:451$412'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:420$79_CHECK' from process `\fifo_async.$proc$fifo_async.v:419$404'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:420$79_EN' from process `\fifo_async.$proc$fifo_async.v:419$404'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:416$78_CHECK' from process `\fifo_async.$proc$fifo_async.v:415$399'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:416$78_EN' from process `\fifo_async.$proc$fifo_async.v:415$399'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:410$77_CHECK' from process `\fifo_async.$proc$fifo_async.v:410$395'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:410$77_EN' from process `\fifo_async.$proc$fifo_async.v:410$395'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:408$76_CHECK' from process `\fifo_async.$proc$fifo_async.v:408$391'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:408$76_EN' from process `\fifo_async.$proc$fifo_async.v:408$391'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:402$75_CHECK' from process `\fifo_async.$proc$fifo_async.v:402$383'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:402$75_EN' from process `\fifo_async.$proc$fifo_async.v:402$383'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:400$74_CHECK' from process `\fifo_async.$proc$fifo_async.v:400$377'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:400$74_EN' from process `\fifo_async.$proc$fifo_async.v:400$377'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:398$73_CHECK' from process `\fifo_async.$proc$fifo_async.v:398$371'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:398$73_EN' from process `\fifo_async.$proc$fifo_async.v:398$371'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:396$72_CHECK' from process `\fifo_async.$proc$fifo_async.v:396$365'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:396$72_EN' from process `\fifo_async.$proc$fifo_async.v:396$365'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:370$71_CHECK' from process `\fifo_async.$proc$fifo_async.v:370$355'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:370$71_EN' from process `\fifo_async.$proc$fifo_async.v:370$355'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:365$70_CHECK' from process `\fifo_async.$proc$fifo_async.v:365$348'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:365$70_EN' from process `\fifo_async.$proc$fifo_async.v:365$348'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:361$69_CHECK' from process `\fifo_async.$proc$fifo_async.v:361$342'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:361$69_EN' from process `\fifo_async.$proc$fifo_async.v:361$342'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:359$68_CHECK' from process `\fifo_async.$proc$fifo_async.v:359$336'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:359$68_EN' from process `\fifo_async.$proc$fifo_async.v:359$336'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:230$29_CHECK' from process `\fifo_async.$proc$fifo_async.v:230$151'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:230$29_EN' from process `\fifo_async.$proc$fifo_async.v:230$151'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:231$30_CHECK' from process `\fifo_async.$proc$fifo_async.v:230$151'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:231$30_EN' from process `\fifo_async.$proc$fifo_async.v:230$151'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:217$27_CHECK' from process `\fifo_async.$proc$fifo_async.v:217$141'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:217$27_EN' from process `\fifo_async.$proc$fifo_async.v:217$141'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:218$28_CHECK' from process `\fifo_async.$proc$fifo_async.v:217$141'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:218$28_EN' from process `\fifo_async.$proc$fifo_async.v:217$141'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:204$26_CHECK' from process `\fifo_async.$proc$fifo_async.v:203$132'.
+No latch inferred for signal `\fifo_async.$formal$fifo_async.v:204$26_EN' from process `\fifo_async.$proc$fifo_async.v:203$132'.
+
+2.2.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\fifo_async.$formal$fifo_async.v:570$89_CHECK' using process `\fifo_async.$proc$fifo_async.v:570$541'.
+  created $dff cell `$procdff$959' with positive edge clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:570$89_EN' using process `\fifo_async.$proc$fifo_async.v:570$541'.
+  created $dff cell `$procdff$960' with positive edge clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:567$88_CHECK' using process `\fifo_async.$proc$fifo_async.v:567$538'.
+  created $dff cell `$procdff$961' with positive edge clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:567$88_EN' using process `\fifo_async.$proc$fifo_async.v:567$538'.
+  created $dff cell `$procdff$962' with positive edge clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:565$24$0' using process `\fifo_async.$proc$fifo_async.v:563$532'.
+  created $dff cell `$procdff$963' with positive edge clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:564$87_CHECK' using process `\fifo_async.$proc$fifo_async.v:563$532'.
+  created $dff cell `$procdff$964' with positive edge clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:564$87_EN' using process `\fifo_async.$proc$fifo_async.v:563$532'.
+  created $dff cell `$procdff$965' with positive edge clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:557$23$0' using process `\fifo_async.$proc$fifo_async.v:555$523'.
+  created $ff cell `$procdff$966' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:556$85_CHECK' using process `\fifo_async.$proc$fifo_async.v:555$523'.
+  created $ff cell `$procdff$967' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:556$85_EN' using process `\fifo_async.$proc$fifo_async.v:555$523'.
+  created $ff cell `$procdff$968' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:552$84_CHECK' using process `\fifo_async.$proc$fifo_async.v:552$520'.
+  created $dff cell `$procdff$969' with positive edge clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:552$84_EN' using process `\fifo_async.$proc$fifo_async.v:552$520'.
+  created $dff cell `$procdff$970' with positive edge clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:549$83_CHECK' using process `\fifo_async.$proc$fifo_async.v:549$517'.
+  created $dff cell `$procdff$971' with positive edge clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:549$83_EN' using process `\fifo_async.$proc$fifo_async.v:549$517'.
+  created $dff cell `$procdff$972' with positive edge clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:517$15$0' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$973' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:517$16$0' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$974' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:524$17$0' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$975' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:528$18$0' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$976' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:531$19$0' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$977' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:534$20$0' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$978' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:538$21$0' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$979' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:540$22$0' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$980' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:517$80_CHECK' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$981' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:517$80_EN' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$982' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:528$81_CHECK' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$983' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:528$81_EN' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$984' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:538$82_CHECK' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$985' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:538$82_EN' using process `\fifo_async.$proc$fifo_async.v:513$474'.
+  created $ff cell `$procdff$986' with global clock.
+Creating register for signal `\fifo_async.\f_r2w_wbin' using process `\fifo_async.$proc$fifo_async.v:390$363'.
+  created $adff cell `$procdff$987' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.\f_r1w_wbin' using process `\fifo_async.$proc$fifo_async.v:390$363'.
+  created $adff cell `$procdff$988' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.\f_w2r_rbin' using process `\fifo_async.$proc$fifo_async.v:383$361'.
+  created $adff cell `$procdff$989' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.\f_w1r_rbin' using process `\fifo_async.$proc$fifo_async.v:383$361'.
+  created $adff cell `$procdff$990' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:355$67_CHECK' using process `\fifo_async.$proc$fifo_async.v:354$329'.
+  created $ff cell `$procdff$991' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:355$67_EN' using process `\fifo_async.$proc$fifo_async.v:354$329'.
+  created $ff cell `$procdff$992' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:350$66_CHECK' using process `\fifo_async.$proc$fifo_async.v:349$325'.
+  created $ff cell `$procdff$993' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:350$66_EN' using process `\fifo_async.$proc$fifo_async.v:349$325'.
+  created $ff cell `$procdff$994' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:345$65_CHECK' using process `\fifo_async.$proc$fifo_async.v:344$318'.
+  created $ff cell `$procdff$995' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:345$65_EN' using process `\fifo_async.$proc$fifo_async.v:344$318'.
+  created $ff cell `$procdff$996' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:340$64_CHECK' using process `\fifo_async.$proc$fifo_async.v:339$314'.
+  created $ff cell `$procdff$997' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:340$64_EN' using process `\fifo_async.$proc$fifo_async.v:339$314'.
+  created $ff cell `$procdff$998' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:335$63_CHECK' using process `\fifo_async.$proc$fifo_async.v:335$310'.
+  created $ff cell `$procdff$999' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:335$63_EN' using process `\fifo_async.$proc$fifo_async.v:335$310'.
+  created $ff cell `$procdff$1000' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:305$53_CHECK' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1001' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:305$53_EN' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1002' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:306$54_CHECK' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1003' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:306$54_EN' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1004' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:308$55_CHECK' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1005' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:308$55_EN' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1006' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:309$56_CHECK' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1007' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:309$56_EN' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1008' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:310$57_CHECK' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1009' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:310$57_EN' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1010' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:312$58_CHECK' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1011' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:312$58_EN' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1012' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:313$59_CHECK' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1013' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:313$59_EN' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1014' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:314$60_CHECK' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1015' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:314$60_EN' using process `\fifo_async.$proc$fifo_async.v:304$282'.
+  created $ff cell `$procdff$1016' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:287$43_CHECK' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1017' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:287$43_EN' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1018' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:288$44_CHECK' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1019' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:288$44_EN' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1020' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:290$45_CHECK' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1021' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:290$45_EN' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1022' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:291$46_CHECK' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1023' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:291$46_EN' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1024' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:292$47_CHECK' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1025' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:292$47_EN' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1026' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:294$48_CHECK' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1027' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:294$48_EN' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1028' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:295$49_CHECK' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1029' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:295$49_EN' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1030' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:297$50_CHECK' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1031' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:297$50_EN' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1032' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:298$51_CHECK' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1033' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:298$51_EN' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1034' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:299$52_CHECK' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1035' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:299$52_EN' using process `\fifo_async.$proc$fifo_async.v:286$249'.
+  created $ff cell `$procdff$1036' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:266$7$0' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1037' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:267$8$0' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1038' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:268$9$0' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1039' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:271$10$0' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1040' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:273$11$0' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1041' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:274$12$0' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1042' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:277$13$0' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1043' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:278$14$0' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1044' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:266$37_CHECK' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1045' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:266$37_EN' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1046' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:267$38_CHECK' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1047' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:267$38_EN' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1048' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:268$39_CHECK' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1049' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:268$39_EN' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1050' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:273$40_CHECK' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1051' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:273$40_EN' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1052' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:274$41_CHECK' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1053' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:274$41_EN' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1054' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:277$42_CHECK' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1055' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:277$42_EN' using process `\fifo_async.$proc$fifo_async.v:264$207'.
+  created $ff cell `$procdff$1056' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:257$36_CHECK' using process `\fifo_async.$proc$fifo_async.v:256$202'.
+  created $ff cell `$procdff$1057' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:257$36_EN' using process `\fifo_async.$proc$fifo_async.v:256$202'.
+  created $ff cell `$procdff$1058' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:253$5$0' using process `\fifo_async.$proc$fifo_async.v:252$187'.
+  created $ff cell `$procdff$1059' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:254$6$0' using process `\fifo_async.$proc$fifo_async.v:252$187'.
+  created $ff cell `$procdff$1060' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:253$35_CHECK' using process `\fifo_async.$proc$fifo_async.v:252$187'.
+  created $ff cell `$procdff$1061' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:253$35_EN' using process `\fifo_async.$proc$fifo_async.v:252$187'.
+  created $ff cell `$procdff$1062' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:249$3$0' using process `\fifo_async.$proc$fifo_async.v:248$172'.
+  created $ff cell `$procdff$1063' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:250$4$0' using process `\fifo_async.$proc$fifo_async.v:248$172'.
+  created $ff cell `$procdff$1064' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:249$34_CHECK' using process `\fifo_async.$proc$fifo_async.v:248$172'.
+  created $ff cell `$procdff$1065' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:249$34_EN' using process `\fifo_async.$proc$fifo_async.v:248$172'.
+  created $ff cell `$procdff$1066' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:245$1$0' using process `\fifo_async.$proc$fifo_async.v:244$158'.
+  created $ff cell `$procdff$1067' with global clock.
+Creating register for signal `\fifo_async.$past$fifo_async.v:245$2$0' using process `\fifo_async.$proc$fifo_async.v:244$158'.
+  created $ff cell `$procdff$1068' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:244$33_CHECK' using process `\fifo_async.$proc$fifo_async.v:244$158'.
+  created $ff cell `$procdff$1069' with global clock.
+Creating register for signal `\fifo_async.$formal$fifo_async.v:244$33_EN' using process `\fifo_async.$proc$fifo_async.v:244$158'.
+  created $ff cell `$procdff$1070' with global clock.
+Creating register for signal `\fifo_async.\f_wclk_count' using process `\fifo_async.$proc$fifo_async.v:224$148'.
+  created $ff cell `$procdff$1071' with global clock.
+Creating register for signal `\fifo_async.\f_rclk_count' using process `\fifo_async.$proc$fifo_async.v:224$148'.
+  created $ff cell `$procdff$1072' with global clock.
+Creating register for signal `\fifo_async.\f_past_valid_gbl' using process `\fifo_async.$proc$fifo_async.v:201$131'.
+  created $ff cell `$procdff$1073' with global clock.
+Creating register for signal `\fifo_async.\f_past_valid_wr' using process `\fifo_async.$proc$fifo_async.v:198$130'.
+  created $dff cell `$procdff$1074' with positive edge clock.
+Creating register for signal `\fifo_async.\f_past_valid_rd' using process `\fifo_async.$proc$fifo_async.v:195$129'.
+  created $dff cell `$procdff$1075' with positive edge clock.
+Creating register for signal `\fifo_async.\o_wfull' using process `\fifo_async.$proc$fifo_async.v:166$125'.
+  created $adff cell `$procdff$1076' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.\wptr' using process `\fifo_async.$proc$fifo_async.v:158$121'.
+  created $adff cell `$procdff$1077' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.\wbin' using process `\fifo_async.$proc$fifo_async.v:150$116'.
+  created $adff cell `$procdff$1078' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.\wq1_rptr' using process `\fifo_async.$proc$fifo_async.v:137$114'.
+  created $adff cell `$procdff$1079' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.\wq2_rptr' using process `\fifo_async.$proc$fifo_async.v:137$114'.
+  created $adff cell `$procdff$1080' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.\o_rempty' using process `\fifo_async.$proc$fifo_async.v:121$111'.
+  created $adff cell `$procdff$1081' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.\rptr' using process `\fifo_async.$proc$fifo_async.v:113$107'.
+  created $adff cell `$procdff$1082' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.\rbin' using process `\fifo_async.$proc$fifo_async.v:105$102'.
+  created $adff cell `$procdff$1083' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.\rq1_wptr' using process `\fifo_async.$proc$fifo_async.v:92$100'.
+  created $adff cell `$procdff$1084' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.\rq2_wptr' using process `\fifo_async.$proc$fifo_async.v:92$100'.
+  created $adff cell `$procdff$1085' with positive edge clock and negative level reset.
+Creating register for signal `\fifo_async.$memwr$\mem$fifo_async.v:81$25_ADDR' using process `\fifo_async.$proc$fifo_async.v:80$91'.
+  created $dff cell `$procdff$1086' with positive edge clock.
+Creating register for signal `\fifo_async.$memwr$\mem$fifo_async.v:81$25_DATA' using process `\fifo_async.$proc$fifo_async.v:80$91'.
+  created $dff cell `$procdff$1087' with positive edge clock.
+Creating register for signal `\fifo_async.$memwr$\mem$fifo_async.v:81$25_EN' using process `\fifo_async.$proc$fifo_async.v:80$91'.
+  created $dff cell `$procdff$1088' with positive edge clock.
+
+2.2.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.2.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `fifo_async.$proc$fifo_async.v:0$710'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$708'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$706'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$704'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$702'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$700'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$698'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$696'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$694'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$692'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$690'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$688'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$686'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$684'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$682'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$680'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$678'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$676'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$674'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$672'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$670'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$668'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$666'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$664'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$662'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$660'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$658'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$656'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$654'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$652'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$650'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$648'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$646'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$644'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$642'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$640'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$638'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$636'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$634'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$632'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$630'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$628'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$627'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$626'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$622'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$618'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$617'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$616'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$615'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$614'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$613'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$612'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$611'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$610'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$609'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$608'.
+Removing empty process `fifo_async.$proc$fifo_async.v:0$607'.
+Removing empty process `fifo_async.$proc$fifo_async.v:570$541'.
+Removing empty process `fifo_async.$proc$fifo_async.v:567$538'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:563$532'.
+Removing empty process `fifo_async.$proc$fifo_async.v:563$532'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:559$529'.
+Removing empty process `fifo_async.$proc$fifo_async.v:559$529'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:555$523'.
+Removing empty process `fifo_async.$proc$fifo_async.v:555$523'.
+Removing empty process `fifo_async.$proc$fifo_async.v:552$520'.
+Removing empty process `fifo_async.$proc$fifo_async.v:549$517'.
+Found and cleaned up 4 empty switches in `\fifo_async.$proc$fifo_async.v:513$474'.
+Removing empty process `fifo_async.$proc$fifo_async.v:513$474'.
+Removing empty process `fifo_async.$proc$fifo_async.v:506$466'.
+Removing empty process `fifo_async.$proc$fifo_async.v:501$460'.
+Removing empty process `fifo_async.$proc$fifo_async.v:497$452'.
+Removing empty process `fifo_async.$proc$fifo_async.v:493$446'.
+Removing empty process `fifo_async.$proc$fifo_async.v:486$444'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:480$440'.
+Removing empty process `fifo_async.$proc$fifo_async.v:480$440'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:474$436'.
+Removing empty process `fifo_async.$proc$fifo_async.v:474$436'.
+Found and cleaned up 3 empty switches in `\fifo_async.$proc$fifo_async.v:461$424'.
+Removing empty process `fifo_async.$proc$fifo_async.v:461$424'.
+Found and cleaned up 3 empty switches in `\fifo_async.$proc$fifo_async.v:451$412'.
+Removing empty process `fifo_async.$proc$fifo_async.v:451$412'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:419$404'.
+Removing empty process `fifo_async.$proc$fifo_async.v:419$404'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:415$399'.
+Removing empty process `fifo_async.$proc$fifo_async.v:415$399'.
+Removing empty process `fifo_async.$proc$fifo_async.v:410$395'.
+Removing empty process `fifo_async.$proc$fifo_async.v:408$391'.
+Removing empty process `fifo_async.$proc$fifo_async.v:402$383'.
+Removing empty process `fifo_async.$proc$fifo_async.v:400$377'.
+Removing empty process `fifo_async.$proc$fifo_async.v:398$371'.
+Removing empty process `fifo_async.$proc$fifo_async.v:396$365'.
+Removing empty process `fifo_async.$proc$fifo_async.v:390$363'.
+Removing empty process `fifo_async.$proc$fifo_async.v:383$361'.
+Removing empty process `fifo_async.$proc$fifo_async.v:370$355'.
+Removing empty process `fifo_async.$proc$fifo_async.v:365$348'.
+Removing empty process `fifo_async.$proc$fifo_async.v:361$342'.
+Removing empty process `fifo_async.$proc$fifo_async.v:359$336'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:354$329'.
+Removing empty process `fifo_async.$proc$fifo_async.v:354$329'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:349$325'.
+Removing empty process `fifo_async.$proc$fifo_async.v:349$325'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:344$318'.
+Removing empty process `fifo_async.$proc$fifo_async.v:344$318'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:339$314'.
+Removing empty process `fifo_async.$proc$fifo_async.v:339$314'.
+Removing empty process `fifo_async.$proc$fifo_async.v:335$310'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:304$282'.
+Removing empty process `fifo_async.$proc$fifo_async.v:304$282'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:286$249'.
+Removing empty process `fifo_async.$proc$fifo_async.v:286$249'.
+Found and cleaned up 3 empty switches in `\fifo_async.$proc$fifo_async.v:264$207'.
+Removing empty process `fifo_async.$proc$fifo_async.v:264$207'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:256$202'.
+Removing empty process `fifo_async.$proc$fifo_async.v:256$202'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:252$187'.
+Removing empty process `fifo_async.$proc$fifo_async.v:252$187'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:248$172'.
+Removing empty process `fifo_async.$proc$fifo_async.v:248$172'.
+Removing empty process `fifo_async.$proc$fifo_async.v:244$158'.
+Removing empty process `fifo_async.$proc$fifo_async.v:230$151'.
+Removing empty process `fifo_async.$proc$fifo_async.v:224$148'.
+Removing empty process `fifo_async.$proc$fifo_async.v:217$141'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:203$132'.
+Removing empty process `fifo_async.$proc$fifo_async.v:203$132'.
+Removing empty process `fifo_async.$proc$fifo_async.v:201$131'.
+Removing empty process `fifo_async.$proc$fifo_async.v:198$130'.
+Removing empty process `fifo_async.$proc$fifo_async.v:195$129'.
+Removing empty process `fifo_async.$proc$fifo_async.v:166$125'.
+Removing empty process `fifo_async.$proc$fifo_async.v:158$121'.
+Removing empty process `fifo_async.$proc$fifo_async.v:150$116'.
+Removing empty process `fifo_async.$proc$fifo_async.v:137$114'.
+Removing empty process `fifo_async.$proc$fifo_async.v:121$111'.
+Removing empty process `fifo_async.$proc$fifo_async.v:113$107'.
+Removing empty process `fifo_async.$proc$fifo_async.v:105$102'.
+Removing empty process `fifo_async.$proc$fifo_async.v:92$100'.
+Found and cleaned up 1 empty switch in `\fifo_async.$proc$fifo_async.v:80$91'.
+Removing empty process `fifo_async.$proc$fifo_async.v:80$91'.
+Cleaned up 31 empty switches.
+
+2.2.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fifo_async.
+<suppressed ~49 debug messages>
+
+2.3. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fifo_async.
+
+2.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fifo_async..
+Removed 19 unused cells and 455 unused wires.
+<suppressed ~20 debug messages>
+
+2.5. Executing CHECK pass (checking for obvious problems).
+Checking module fifo_async...
+Found and reported 0 problems.
+
+2.6. Executing OPT pass (performing simple optimizations).
+
+2.6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fifo_async.
+
+2.6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fifo_async'.
+<suppressed ~207 debug messages>
+Removed a total of 69 cells.
+
+2.6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fifo_async..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $procmux$758.
+    dead port 1/2 on $mux $procmux$761.
+    dead port 1/2 on $mux $procmux$767.
+    dead port 1/2 on $mux $procmux$776.
+    dead port 1/2 on $mux $procmux$779.
+    dead port 1/2 on $mux $procmux$785.
+Removed 6 multiplexer ports.
+<suppressed ~87 debug messages>
+
+2.6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fifo_async.
+    Consolidated identical input bits for $mux cell $procmux$951:
+      Old ports: A=2'00, B=2'11, Y=$0$memwr$\mem$fifo_async.v:81$25_EN[1:0]$94
+      New ports: A=1'0, B=1'1, Y=$0$memwr$\mem$fifo_async.v:81$25_EN[1:0]$94 [0]
+      New connections: $0$memwr$\mem$fifo_async.v:81$25_EN[1:0]$94 [1] = $0$memwr$\mem$fifo_async.v:81$25_EN[1:0]$94 [0]
+  Optimizing cells in module \fifo_async.
+Performed a total of 1 changes.
+
+2.6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fifo_async'.
+<suppressed ~150 debug messages>
+Removed a total of 50 cells.
+
+2.6.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fifo_async..
+Removed 0 unused cells and 123 unused wires.
+<suppressed ~9 debug messages>
+
+2.6.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fifo_async.
+
+2.6.8. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.6.9. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fifo_async..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~65 debug messages>
+
+2.6.10. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fifo_async.
+Performed a total of 0 changes.
+
+2.6.11. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fifo_async'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+2.6.12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fifo_async..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+2.6.13. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fifo_async.
+
+2.6.14. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.6.15. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \fifo_async..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~65 debug messages>
+
+2.6.16. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \fifo_async.
+Performed a total of 0 changes.
+
+2.6.17. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fifo_async'.
+Removed a total of 0 cells.
+
+2.6.18. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fifo_async..
+
+2.6.19. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fifo_async.
+
+2.6.20. Finished OPT passes. (There is nothing left to do.)
+
+2.7. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 address bits (of 5) from memory read port fifo_async.$memrd$\mem$fifo_async.v:482$441 (mem).
+Removed top 4 bits (of 5) from port B of cell fifo_async.$add$fifo_async.v:109$106 ($add).
+Removed top 1 bits (of 5) from port A of cell fifo_async.$xor$fifo_async.v:117$110 ($xor).
+Removed top 4 bits (of 5) from port B of cell fifo_async.$add$fifo_async.v:154$120 ($add).
+Removed top 1 bits (of 5) from port A of cell fifo_async.$xor$fifo_async.v:162$124 ($xor).
+Removed top 31 bits (of 32) from port B of cell fifo_async.$and$fifo_async.v:0$164 ($and).
+Removed top 31 bits (of 32) from port Y of cell fifo_async.$and$fifo_async.v:0$164 ($and).
+Removed top 31 bits (of 32) from port B of cell fifo_async.$and$fifo_async.v:0$168 ($and).
+Removed top 31 bits (of 32) from port Y of cell fifo_async.$and$fifo_async.v:0$168 ($and).
+Removed top 31 bits (of 32) from port B of cell fifo_async.$and$fifo_async.v:0$177 ($and).
+Removed top 31 bits (of 32) from port Y of cell fifo_async.$and$fifo_async.v:0$177 ($and).
+Removed top 31 bits (of 32) from port B of cell fifo_async.$and$fifo_async.v:0$179 ($and).
+Removed top 31 bits (of 32) from port Y of cell fifo_async.$and$fifo_async.v:0$179 ($and).
+Removed top 31 bits (of 32) from port B of cell fifo_async.$and$fifo_async.v:0$182 ($and).
+Removed top 31 bits (of 32) from port Y of cell fifo_async.$and$fifo_async.v:0$182 ($and).
+Removed top 31 bits (of 32) from port B of cell fifo_async.$and$fifo_async.v:0$192 ($and).
+Removed top 31 bits (of 32) from port Y of cell fifo_async.$and$fifo_async.v:0$192 ($and).
+Removed top 31 bits (of 32) from port B of cell fifo_async.$and$fifo_async.v:0$194 ($and).
+Removed top 31 bits (of 32) from port Y of cell fifo_async.$and$fifo_async.v:0$194 ($and).
+Removed top 31 bits (of 32) from port B of cell fifo_async.$and$fifo_async.v:0$197 ($and).
+Removed top 31 bits (of 32) from port Y of cell fifo_async.$and$fifo_async.v:0$197 ($and).
+Removed top 4 bits (of 5) from port B of cell fifo_async.$eq$fifo_async.v:355$332 ($eq).
+Removed top 1 bits (of 5) from port A of cell fifo_async.$xor$fifo_async.v:360$340 ($xor).
+Removed top 1 bits (of 5) from port A of cell fifo_async.$xor$fifo_async.v:362$346 ($xor).
+Removed top 1 bits (of 5) from port A of cell fifo_async.$xor$fifo_async.v:397$369 ($xor).
+Removed top 1 bits (of 5) from port A of cell fifo_async.$xor$fifo_async.v:399$375 ($xor).
+Removed top 1 bits (of 5) from port A of cell fifo_async.$xor$fifo_async.v:401$381 ($xor).
+Removed top 1 bits (of 5) from port A of cell fifo_async.$xor$fifo_async.v:403$387 ($xor).
+Removed top 31 bits (of 32) from port B of cell fifo_async.$add$fifo_async.v:443$409 ($add).
+Removed top 27 bits (of 32) from port Y of cell fifo_async.$add$fifo_async.v:443$409 ($add).
+Removed top 31 bits (of 32) from wire fifo_async.$and$fifo_async.v:0$163_Y.
+Removed top 31 bits (of 32) from wire fifo_async.$and$fifo_async.v:0$164_Y.
+Removed top 31 bits (of 32) from wire fifo_async.$and$fifo_async.v:0$167_Y.
+Removed top 31 bits (of 32) from wire fifo_async.$and$fifo_async.v:0$177_Y.
+Removed top 31 bits (of 32) from wire fifo_async.$and$fifo_async.v:0$179_Y.
+Removed top 31 bits (of 32) from wire fifo_async.$and$fifo_async.v:0$192_Y.
+Removed top 31 bits (of 32) from wire fifo_async.$and$fifo_async.v:0$194_Y.
+
+2.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fifo_async..
+Removed 0 unused cells and 8 unused wires.
+<suppressed ~1 debug messages>
+
+2.9. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.10. Executing OPT pass (performing simple optimizations).
+
+2.10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fifo_async.
+<suppressed ~8 debug messages>
+
+2.10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fifo_async'.
+Removed a total of 0 cells.
+
+2.10.3. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fifo_async..
+Removed 0 unused cells and 8 unused wires.
+<suppressed ~1 debug messages>
+
+2.10.4. Finished fast OPT passes.
+
+2.11. Printing statistics.
+
+=== fifo_async ===
+
+   Number of wires:                344
+   Number of wire bits:            496
+   Number of public wires:          53
+   Number of public wire bits:     162
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                393
+     $add                            5
+     $adff                          14
+     $anyconst                       5
+     $assert                        42
+     $assume                        13
+     $cover                          7
+     $dff                            9
+     $eq                            33
+     $ff                            67
+     $ge                             2
+     $gt                             2
+     $initstate                      1
+     $le                             5
+     $logic_and                     40
+     $logic_not                     28
+     $logic_or                      16
+     $lt                             4
+     $mem                            1
+     $mux                           81
+     $ne                             1
+     $not                            4
+     $reduce_bool                    2
+     $sub                            3
+     $xor                            8
+
+2.12. Executing CHECK pass (checking for obvious problems).
+Checking module fifo_async...
+Found and reported 0 problems.
+
+3. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+4. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+Modifying write port 0 on memory fifo_async.mem: CLK=\i_wclk, A=$0$memwr$\mem$fifo_async.v:81$25_ADDR[3:0]$92, D=$0$memwr$\mem$fifo_async.v:81$25_DATA[1:0]$93
+Replacing fifo_async.$procdff$1074 ($dff): CLK=\i_wclk, D=1'1, Q=\f_past_valid_wr
+Replacing fifo_async.$procdff$1075 ($dff): CLK=\i_rclk, D=1'1, Q=\f_past_valid_rd
+Replacing fifo_async.$procdff$1076 ($adff): CLK=\i_wclk, D=\wfull_val, Q=\o_wfull
+Replacing fifo_async.$procdff$1077 ($adff): CLK=\i_wclk, D=\wgraynext, Q=\wptr
+Replacing fifo_async.$procdff$1078 ($adff): CLK=\i_wclk, D=\wbinnext, Q=\wbin
+Replacing fifo_async.$procdff$1079 ($adff): CLK=\i_wclk, D=\rptr, Q=\wq1_rptr
+Replacing fifo_async.$procdff$1080 ($adff): CLK=\i_wclk, D=\wq1_rptr, Q=\wq2_rptr
+Replacing fifo_async.$procdff$1081 ($adff): CLK=\i_rclk, D=\rempty_val, Q=\o_rempty
+Replacing fifo_async.$procdff$1082 ($adff): CLK=\i_rclk, D=\rgraynext, Q=\rptr
+Replacing fifo_async.$procdff$1083 ($adff): CLK=\i_rclk, D=\rbinnext, Q=\rbin
+Replacing fifo_async.$procdff$1084 ($adff): CLK=\i_rclk, D=\wptr, Q=\rq1_wptr
+Replacing fifo_async.$procdff$1085 ($adff): CLK=\i_rclk, D=\rq1_wptr, Q=\rq2_wptr
+Replacing fifo_async.$procdff$959 ($dff): CLK=\i_rclk, D=$0$formal$fifo_async.v:570$89_CHECK[0:0]$542, Q=$formal$fifo_async.v:570$89_CHECK
+Replacing fifo_async.$procdff$961 ($dff): CLK=\i_wclk, D=\i_wr, Q=$formal$fifo_async.v:567$88_CHECK
+Replacing fifo_async.$procdff$963 ($dff): CLK=\i_wclk, D=\o_wfull, Q=$past$fifo_async.v:565$24$0
+Replacing fifo_async.$procdff$964 ($dff): CLK=\i_wclk, D=$0$formal$fifo_async.v:564$87_CHECK[0:0]$534, Q=$formal$fifo_async.v:564$87_CHECK
+Replacing fifo_async.$procdff$965 ($dff): CLK=\i_wclk, D=$0$formal$fifo_async.v:564$87_EN[0:0]$535, Q=$formal$fifo_async.v:564$87_EN
+Replacing fifo_async.$procdff$969 ($dff): CLK=\i_rclk, D=\i_rrstn, Q=$formal$fifo_async.v:552$84_CHECK
+Replacing fifo_async.$procdff$971 ($dff): CLK=\i_wclk, D=\i_wrstn, Q=$formal$fifo_async.v:549$83_CHECK
+Replacing fifo_async.$procdff$987 ($adff): CLK=\i_rclk, D=\f_r1w_wbin, Q=\f_r2w_wbin
+Replacing fifo_async.$procdff$988 ($adff): CLK=\i_rclk, D=\wbin, Q=\f_r1w_wbin
+Replacing fifo_async.$procdff$989 ($adff): CLK=\i_wclk, D=\f_w1r_rbin, Q=\f_w2r_rbin
+Replacing fifo_async.$procdff$990 ($adff): CLK=\i_wclk, D=\rbin, Q=\f_w1r_rbin
+
+5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fifo_async..
+Removed 0 unused cells and 11 unused wires.
+<suppressed ~1 debug messages>
+
+6. Executing SETUNDEF pass (replace undef values with defined constants).
+
+7. Executing OPT pass (performing simple optimizations).
+
+7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fifo_async.
+<suppressed ~14 debug messages>
+
+7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fifo_async'.
+<suppressed ~291 debug messages>
+Removed a total of 97 cells.
+
+7.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fifo_async..
+Removed 2 unused cells and 99 unused wires.
+<suppressed ~14 debug messages>
+
+7.5. Finished fast OPT passes.
+
+8. Executing CHECK pass (checking for obvious problems).
+Checking module fifo_async...
+Found and reported 0 problems.
+
+9. Executing HIERARCHY pass (managing design hierarchy).
+
+9.1. Analyzing design hierarchy..
+Top module:  \fifo_async
+
+9.2. Analyzing design hierarchy..
+Top module:  \fifo_async
+Removed 0 unused modules.
+Module fifo_async directly or indirectly contains formal properties -> setting "keep" attribute.
+
+10. Executing RTLIL backend.
+Output filename: ../model/design.il
+
+End of script. Logfile hash: da1fa56410, CPU: user 0.27s system 0.02s, MEM: 9.66 MB peak
+Yosys 0.9+4251 (git sha1 e6f3d1c2, clang 10.0.0-4ubuntu1 -fPIC -Os)
+Time spent: 29% 6x opt_merge (0 sec), 23% 8x opt_expr (0 sec), ...
