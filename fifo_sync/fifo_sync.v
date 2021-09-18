@@ -15,7 +15,7 @@ module fifo_sync
     input  wire                   i_rstn,
                    
     input  wire                   i_wr,
-    input  wire                   i_data,
+    input  wire [DATA_WIDTH-1:0]  i_data,
                   
     input  wire                   i_rd,
     output reg  [DATA_WIDTH-1:0]  o_data,
