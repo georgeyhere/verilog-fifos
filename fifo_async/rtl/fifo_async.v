@@ -20,6 +20,33 @@
 //!    - full flag  (write domain)
 //!        - removed with synchronized read pointer
 //
+/*
+INSTANTIATION TEMPLATE:
+
+fifo_async #(
+    .DATA_WIDTH         (DATA_WIDTH),
+    .PTR_WIDTH          (ADDR_WIDTH),
+    .ALMOSTFULL_OFFSET  (ALMOSTFULL_OFFSET),
+    .ALMOSTEMPTY_OFFSET (ALMOSTEMPTY_OFFSET) 
+) 
+DUT (
+    .i_wclk         (),
+    .i_wrstn        (),
+    .i_wr           (),
+    .i_wdata        (),
+    .o_wfill        (),
+    .o_wfull        (),
+    .o_walmostfull  (),
+    
+    .i_rclk         (),
+    .i_rrstn        (),
+    .i_rd           (),
+    .o_rdata        (),
+    .o_rfill        (),
+    .o_rempty       (),
+    .o_ralmostempty ()
+);
+*/
 module fifo_async 
     #(parameter DATA_WIDTH         = 8, //! FIFO data width
       parameter PTR_WIDTH          = 4, //! FIFO greycode pointer width
