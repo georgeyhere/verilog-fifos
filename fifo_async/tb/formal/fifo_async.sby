@@ -17,4 +17,4 @@ read_verilog -formal fifo_async.v
 prep -top fifo_async
 
 [files]
-fifo_async.v
+../rtl/fifo_async.v
