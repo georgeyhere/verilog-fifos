@@ -1,0 +1,76 @@
+##   0:00:00  Solver: yices
+##   0:00:00  Checking cover reachability in step 0..
+##   0:00:00  Checking cover reachability in step 1..
+##   0:00:00  Reached cover statement at fifo_sync.v:286.33-287.22 ($cover$fifo_sync.v:286$390) in step 1.
+##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+##   0:00:00  Checking cover reachability in step 1..
+##   0:00:00  Checking cover reachability in step 2..
+##   0:00:00  Checking cover reachability in step 3..
+##   0:00:00  Reached cover statement at fifo_sync.v:289.21-290.31 ($cover$fifo_sync.v:289$393) in step 3.
+##   0:00:00  Reached cover statement at fifo_sync.v:288.21-289.20 ($cover$fifo_sync.v:288$392) in step 3.
+##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+##   0:00:00  Checking cover reachability in step 3..
+##   0:00:00  Reached cover statement at fifo_sync.v:287.23-288.20 ($cover$fifo_sync.v:287$391) in step 3.
+##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+##   0:00:00  Checking cover reachability in step 3..
+##   0:00:00  Checking cover reachability in step 4..
+##   0:00:00  Checking cover reachability in step 5..
+##   0:00:00  Reached cover statement at fifo_sync.v:303.29-304.50 ($cover$fifo_sync.v:303$397) in step 5.
+##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+##   0:00:00  Checking cover reachability in step 5..
+##   0:00:00  Checking cover reachability in step 6..
+##   0:00:00  Checking cover reachability in step 7..
+##   0:00:00  Checking cover reachability in step 8..
+##   0:00:00  Checking cover reachability in step 9..
+##   0:00:00  Checking cover reachability in step 10..
+##   0:00:00  Checking cover reachability in step 11..
+##   0:00:00  Checking cover reachability in step 12..
+##   0:00:00  Checking cover reachability in step 13..
+##   0:00:00  Checking cover reachability in step 14..
+##   0:00:00  Checking cover reachability in step 15..
+##   0:00:00  Checking cover reachability in step 16..
+##   0:00:00  Checking cover reachability in step 17..
+##   0:00:00  Checking cover reachability in step 18..
+##   0:00:00  Checking cover reachability in step 19..
+##   0:00:00  Checking cover reachability in step 20..
+##   0:00:00  Checking cover reachability in step 21..
+##   0:00:00  Checking cover reachability in step 22..
+##   0:00:00  Checking cover reachability in step 23..
+##   0:00:01  Checking cover reachability in step 24..
+##   0:00:01  Checking cover reachability in step 25..
+##   0:00:01  Checking cover reachability in step 26..
+##   0:00:02  Checking cover reachability in step 27..
+##   0:00:02  Checking cover reachability in step 28..
+##   0:00:02  Checking cover reachability in step 29..
+##   0:00:02  Checking cover reachability in step 30..
+##   0:00:03  Checking cover reachability in step 31..
+##   0:00:04  Checking cover reachability in step 32..
+##   0:00:04  Checking cover reachability in step 33..
+##   0:00:05  Checking cover reachability in step 34..
+##   0:00:06  Checking cover reachability in step 35..
+##   0:00:07  Checking cover reachability in step 36..
+##   0:00:09  Checking cover reachability in step 37..
+##   0:00:10  Checking cover reachability in step 38..
+##   0:00:12  Checking cover reachability in step 39..
+##   0:00:14  Checking cover reachability in step 40..
+##   0:00:17  Checking cover reachability in step 41..
+##   0:00:19  Checking cover reachability in step 42..
+##   0:00:21  Checking cover reachability in step 43..
+##   0:00:24  Checking cover reachability in step 44..
+##   0:00:27  Unreached cover statement at fifo_sync.v:307.13-308.22 ($cover$fifo_sync.v:307$398).
+##   0:00:27  Unreached cover statement at fifo_sync.v:299.25-300.46 ($cover$fifo_sync.v:299$396).
+##   0:00:27  Unreached cover statement at fifo_sync.v:295.25-296.62 ($cover$fifo_sync.v:295$395).
+##   0:00:27  Unreached cover statement at fifo_sync.v:290.32-291.34 ($cover$fifo_sync.v:290$394).
+##   0:00:27  Status: failed

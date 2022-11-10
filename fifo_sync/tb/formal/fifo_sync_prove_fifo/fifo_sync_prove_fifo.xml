@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2022-11-09T15:59:19" hostname="ThinkPad-XB-70" package="fifo_sync" id="0" name="prove_fifo" tests="28" errors="0" failures="2" time="328" skipped="27">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="UNKNOWN"/>
+</properties>
+<testcase classname="prove_fifo" name="build execution" time="0">
+<failure type="UNKNOWN" message="Task returned status UNKNOWN." />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:125.30-126.34" time="0" type="ASSERT" location="fifo_sync.v:125.30-126.34" id="$assert$fifo_sync.v:125$362">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:157.39-159.54" time="0" type="ASSERT" location="fifo_sync.v:157.39-159.54" id="$assert$fifo_sync.v:157$370">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:159.55-160.54" time="0" type="ASSERT" location="fifo_sync.v:159.55-160.54" id="$assert$fifo_sync.v:159$371">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:160.55-161.54" time="0" type="ASSERT" location="fifo_sync.v:160.55-161.54" id="$assert$fifo_sync.v:160$372">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:170.31-172.30" time="0" type="ASSERT" location="fifo_sync.v:170.31-172.30" id="$assert$fifo_sync.v:170$375">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:172.31-173.30" time="0" type="ASSERT" location="fifo_sync.v:172.31-173.30" id="$assert$fifo_sync.v:172$376">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:173.31-174.36" time="0" type="ASSERT" location="fifo_sync.v:173.31-174.36" id="$assert$fifo_sync.v:173$377">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:174.37-175.36" time="0" type="ASSERT" location="fifo_sync.v:174.37-175.36" id="$assert$fifo_sync.v:174$378">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:175.37-177.32" time="0" type="ASSERT" location="fifo_sync.v:175.37-177.32" id="$assert$fifo_sync.v:175$379">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:177.33-178.28" time="0" type="ASSERT" location="fifo_sync.v:177.33-178.28" id="$assert$fifo_sync.v:177$380">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:178.29-179.28" time="0" type="ASSERT" location="fifo_sync.v:178.29-179.28" id="$assert$fifo_sync.v:178$381">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:187.12-187.32" time="0" type="ASSERT" location="fifo_sync.v:187.12-187.32" id="$assert$fifo_sync.v:187$382">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:189.33-190.57" time="0" type="ASSERT" location="fifo_sync.v:189.33-190.57" id="$assert$fifo_sync.v:189$383">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:192.53-193.27" time="0" type="ASSERT" location="fifo_sync.v:192.53-193.27" id="$assert$fifo_sync.v:192$384">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:195.24-196.28" time="0" type="ASSERT" location="fifo_sync.v:195.24-196.28" id="$assert$fifo_sync.v:195$385">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:199.19-200.48" time="0" type="ASSERT" location="fifo_sync.v:199.19-200.48" id="$assert$fifo_sync.v:199$386">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:271.68-272.84" time="0" type="ASSERT" location="fifo_sync.v:271.68-272.84" id="$assert$fifo_sync.v:271$387" tracefile="engine_0/trace_induct.vcd">
+<failure type="ASSERT" message="Property ASSERT in fifo_sync at fifo_sync.v:271.68-272.84 failed. Trace file: engine_0/trace_induct.vcd" />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:274.37-277.50" time="0" type="ASSERT" location="fifo_sync.v:274.37-277.50" id="$assert$fifo_sync.v:274$388">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:279.47-280.87" time="0" type="ASSERT" location="fifo_sync.v:279.47-280.87" id="$assert$fifo_sync.v:279$389">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property COVER in fifo_sync at fifo_sync.v:286.33-287.22" time="0" type="COVER" location="fifo_sync.v:286.33-287.22" id="$cover$fifo_sync.v:286$390">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property COVER in fifo_sync at fifo_sync.v:287.23-288.20" time="0" type="COVER" location="fifo_sync.v:287.23-288.20" id="$cover$fifo_sync.v:287$391">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property COVER in fifo_sync at fifo_sync.v:288.21-289.20" time="0" type="COVER" location="fifo_sync.v:288.21-289.20" id="$cover$fifo_sync.v:288$392">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property COVER in fifo_sync at fifo_sync.v:289.21-290.31" time="0" type="COVER" location="fifo_sync.v:289.21-290.31" id="$cover$fifo_sync.v:289$393">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property COVER in fifo_sync at fifo_sync.v:290.32-291.34" time="0" type="COVER" location="fifo_sync.v:290.32-291.34" id="$cover$fifo_sync.v:290$394">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property COVER in fifo_sync at fifo_sync.v:295.25-296.62" time="0" type="COVER" location="fifo_sync.v:295.25-296.62" id="$cover$fifo_sync.v:295$395">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property COVER in fifo_sync at fifo_sync.v:299.25-300.46" time="0" type="COVER" location="fifo_sync.v:299.25-300.46" id="$cover$fifo_sync.v:299$396">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property COVER in fifo_sync at fifo_sync.v:303.29-304.50" time="0" type="COVER" location="fifo_sync.v:303.29-304.50" id="$cover$fifo_sync.v:303$397">
+<skipped />
+</testcase>
+<testcase classname="prove_fifo" name="Property COVER in fifo_sync at fifo_sync.v:307.13-308.22" time="0" type="COVER" location="fifo_sync.v:307.13-308.22" id="$cover$fifo_sync.v:307$398">
+<skipped />
+</testcase>
+<system-out>SBY 15:54:21 [formal/fifo_sync_prove_fifo] Removing directory '/home/george/repos/verilog-fifos/fifo_sync/tb/formal/fifo_sync_prove_fifo'.
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] Copy '/home/george/repos/verilog-fifos/fifo_sync/rtl/fifo_sync.v' to '/home/george/repos/verilog-fifos/fifo_sync/tb/formal/fifo_sync_prove_fifo/src/fifo_sync.v'.
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0: smtbmc
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] base: starting process &quot;cd formal/fifo_sync_prove_fifo/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] base: finished (returncode=0)
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] prep: starting process &quot;cd formal/fifo_sync_prove_fifo/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] prep: finished (returncode=0)
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] smt2: starting process &quot;cd formal/fifo_sync_prove_fifo/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] smt2: finished (returncode=0)
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: starting process &quot;cd formal/fifo_sync_prove_fifo; yosys-smtbmc --presat --unroll --noprogress -t 45  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: starting process &quot;cd formal/fifo_sync_prove_fifo; yosys-smtbmc --presat --unroll -i --noprogress -t 45  --append 0 --dump-vcd engine_0/trace_induct.vcd --dump-yw engine_0/trace_induct.yw --dump-vlogtb engine_0/trace_induct_tb.v --dump-smtc engine_0/trace_induct.smtc model/design_smt2.smt2&quot;
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Solver: yices
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Solver: yices
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 0..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 0..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 45..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 44..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 1..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 1..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 43..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 2..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 2..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 3..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 3..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 42..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 4..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 4..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 41..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 5..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 5..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 40..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 39..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 6..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 6..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 38..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 37..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 7..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 36..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 7..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 35..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 34..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 33..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 8..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 32..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 8..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 31..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 30..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 29..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 28..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 9..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 9..
+SBY 15:54:21 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 27..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 26..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 25..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 24..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 10..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 10..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 23..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 22..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 21..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 20..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 11..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 19..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 11..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 18..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 17..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 16..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 12..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 12..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 15..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 14..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 13..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 12..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assumptions in step 13..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:00  Checking assertions in step 13..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 11..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:00  Trying induction in step 10..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Trying induction in step 9..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Trying induction in step 8..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:01  Checking assumptions in step 14..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:01  Checking assertions in step 14..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Trying induction in step 7..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Trying induction in step 6..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Trying induction in step 5..
+SBY 15:54:22 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Trying induction in step 4..
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Trying induction in step 3..
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:01  Checking assumptions in step 15..
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:01  Checking assertions in step 15..
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Trying induction in step 2..
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Trying induction in step 1..
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Trying induction in step 0..
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Temporal induction failed!
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Value for anyconst fifo_sync.f_const_addr (fifo_sync.v:0.0-0.0): 1917
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Value for anyconst fifo_sync.f_const_next (fifo_sync.v:0.0-0.0): 1073479679
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Value for anyconst fifo_sync.f_const_first (fifo_sync.v:0.0-0.0): 3221225471
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Value for anyconst in fifo_sync (fifo_sync.v:133.25-133.34): 18
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Assert failed in fifo_sync: fifo_sync.v:271.68-272.84 ($assert$fifo_sync.v:271$387)
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Writing trace to VCD file: engine_0/trace_induct.vcd
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Writing trace to Verilog testbench: engine_0/trace_induct_tb.v
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Writing trace to constraints file: engine_0/trace_induct.smtc
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Writing trace to Yosys witness file: engine_0/trace_induct.yw
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:01  Checking assumptions in step 16..
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:01  Checking assertions in step 16..
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: ##   0:00:01  Status: failed
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.induction: finished (returncode=1)
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0: Status returned by engine for induction: FAIL
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:02  Checking assumptions in step 17..
+SBY 15:54:23 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:02  Checking assertions in step 17..
+SBY 15:54:24 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:02  Checking assumptions in step 18..
+SBY 15:54:24 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:02  Checking assertions in step 18..
+SBY 15:54:25 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:03  Checking assumptions in step 19..
+SBY 15:54:25 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:03  Checking assertions in step 19..
+SBY 15:54:25 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:03  Checking assumptions in step 20..
+SBY 15:54:25 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:03  Checking assertions in step 20..
+SBY 15:54:26 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:04  Checking assumptions in step 21..
+SBY 15:54:26 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:04  Checking assertions in step 21..
+SBY 15:54:27 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:05  Checking assumptions in step 22..
+SBY 15:54:27 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:05  Checking assertions in step 22..
+SBY 15:54:28 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:07  Checking assumptions in step 23..
+SBY 15:54:28 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:07  Checking assertions in step 23..
+SBY 15:54:29 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:08  Checking assumptions in step 24..
+SBY 15:54:29 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:08  Checking assertions in step 24..
+SBY 15:54:31 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:09  Checking assumptions in step 25..
+SBY 15:54:31 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:09  Checking assertions in step 25..
+SBY 15:54:33 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:11  Checking assumptions in step 26..
+SBY 15:54:33 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:12  Checking assertions in step 26..
+SBY 15:54:36 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:14  Checking assumptions in step 27..
+SBY 15:54:36 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:14  Checking assertions in step 27..
+SBY 15:54:38 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:17  Checking assumptions in step 28..
+SBY 15:54:39 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:17  Checking assertions in step 28..
+SBY 15:54:41 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:19  Checking assumptions in step 29..
+SBY 15:54:41 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:19  Checking assertions in step 29..
+SBY 15:54:44 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:22  Checking assumptions in step 30..
+SBY 15:54:44 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:23  Checking assertions in step 30..
+SBY 15:54:47 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:26  Checking assumptions in step 31..
+SBY 15:54:48 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:26  Checking assertions in step 31..
+SBY 15:54:51 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:29  Checking assumptions in step 32..
+SBY 15:54:51 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:29  Checking assertions in step 32..
+SBY 15:54:57 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:35  Checking assumptions in step 33..
+SBY 15:54:57 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:36  Checking assertions in step 33..
+SBY 15:55:00 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:39  Checking assumptions in step 34..
+SBY 15:55:01 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:39  Checking assertions in step 34..
+SBY 15:55:07 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:46  Checking assumptions in step 35..
+SBY 15:55:08 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:46  Checking assertions in step 35..
+SBY 15:55:17 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:55  Checking assumptions in step 36..
+SBY 15:55:19 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:00:57  Checking assertions in step 36..
+SBY 15:55:31 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:01:10  Checking assumptions in step 37..
+SBY 15:55:32 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:01:10  Checking assertions in step 37..
+SBY 15:55:47 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:01:25  Checking assumptions in step 38..
+SBY 15:55:47 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:01:25  Checking assertions in step 38..
+SBY 15:56:05 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:01:43  Checking assumptions in step 39..
+SBY 15:56:06 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:01:44  Checking assertions in step 39..
+SBY 15:56:21 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:02:00  Checking assumptions in step 40..
+SBY 15:56:22 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:02:00  Checking assertions in step 40..
+SBY 15:56:42 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:02:21  Checking assumptions in step 41..
+SBY 15:56:43 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:02:21  Checking assertions in step 41..
+SBY 15:57:11 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:02:49  Checking assumptions in step 42..
+SBY 15:57:12 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:02:50  Checking assertions in step 42..
+SBY 15:57:49 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:03:28  Checking assumptions in step 43..
+SBY 15:57:50 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:03:29  Checking assertions in step 43..
+SBY 15:58:33 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:04:11  Checking assumptions in step 44..
+SBY 15:58:35 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:04:13  Checking assertions in step 44..
+SBY 15:59:19 [formal/fifo_sync_prove_fifo] engine_0.basecase: ##   0:04:57  Status: passed
+SBY 15:59:19 [formal/fifo_sync_prove_fifo] engine_0.basecase: finished (returncode=0)
+SBY 15:59:19 [formal/fifo_sync_prove_fifo] engine_0: Status returned by engine for basecase: pass
+SBY 15:59:19 [formal/fifo_sync_prove_fifo] summary: Elapsed clock time [H:MM:SS (secs)]: 0:04:57 (297)
+SBY 15:59:19 [formal/fifo_sync_prove_fifo] summary: Elapsed process time [H:MM:SS (secs)]: 0:05:28 (328)
+SBY 15:59:19 [formal/fifo_sync_prove_fifo] summary: engine_0 (smtbmc) returned FAIL for induction
+SBY 15:59:19 [formal/fifo_sync_prove_fifo] summary: engine_0 (smtbmc) returned pass for basecase
+SBY 15:59:19 [formal/fifo_sync_prove_fifo] DONE (UNKNOWN, rc=4)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

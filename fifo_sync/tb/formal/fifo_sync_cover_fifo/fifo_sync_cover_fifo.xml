@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2022-11-09T15:54:49" hostname="ThinkPad-XB-70" package="fifo_sync" id="0" name="cover_fifo" tests="28" errors="0" failures="5" time="30" skipped="19">
+<properties>
+<property name="os" value="Linux"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="cover_fifo" name="build execution" time="0">
+<failure type="FAIL" message="Task returned status FAIL." />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:125.30-126.34" time="0" type="ASSERT" location="fifo_sync.v:125.30-126.34" id="$assert$fifo_sync.v:125$362">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:157.39-159.54" time="0" type="ASSERT" location="fifo_sync.v:157.39-159.54" id="$assert$fifo_sync.v:157$370">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:159.55-160.54" time="0" type="ASSERT" location="fifo_sync.v:159.55-160.54" id="$assert$fifo_sync.v:159$371">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:160.55-161.54" time="0" type="ASSERT" location="fifo_sync.v:160.55-161.54" id="$assert$fifo_sync.v:160$372">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:170.31-172.30" time="0" type="ASSERT" location="fifo_sync.v:170.31-172.30" id="$assert$fifo_sync.v:170$375">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:172.31-173.30" time="0" type="ASSERT" location="fifo_sync.v:172.31-173.30" id="$assert$fifo_sync.v:172$376">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:173.31-174.36" time="0" type="ASSERT" location="fifo_sync.v:173.31-174.36" id="$assert$fifo_sync.v:173$377">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:174.37-175.36" time="0" type="ASSERT" location="fifo_sync.v:174.37-175.36" id="$assert$fifo_sync.v:174$378">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:175.37-177.32" time="0" type="ASSERT" location="fifo_sync.v:175.37-177.32" id="$assert$fifo_sync.v:175$379">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:177.33-178.28" time="0" type="ASSERT" location="fifo_sync.v:177.33-178.28" id="$assert$fifo_sync.v:177$380">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:178.29-179.28" time="0" type="ASSERT" location="fifo_sync.v:178.29-179.28" id="$assert$fifo_sync.v:178$381">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:187.12-187.32" time="0" type="ASSERT" location="fifo_sync.v:187.12-187.32" id="$assert$fifo_sync.v:187$382">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:189.33-190.57" time="0" type="ASSERT" location="fifo_sync.v:189.33-190.57" id="$assert$fifo_sync.v:189$383">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:192.53-193.27" time="0" type="ASSERT" location="fifo_sync.v:192.53-193.27" id="$assert$fifo_sync.v:192$384">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:195.24-196.28" time="0" type="ASSERT" location="fifo_sync.v:195.24-196.28" id="$assert$fifo_sync.v:195$385">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:199.19-200.48" time="0" type="ASSERT" location="fifo_sync.v:199.19-200.48" id="$assert$fifo_sync.v:199$386">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:271.68-272.84" time="0" type="ASSERT" location="fifo_sync.v:271.68-272.84" id="$assert$fifo_sync.v:271$387">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:274.37-277.50" time="0" type="ASSERT" location="fifo_sync.v:274.37-277.50" id="$assert$fifo_sync.v:274$388">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property ASSERT in fifo_sync at fifo_sync.v:279.47-280.87" time="0" type="ASSERT" location="fifo_sync.v:279.47-280.87" id="$assert$fifo_sync.v:279$389">
+<skipped />
+</testcase>
+<testcase classname="cover_fifo" name="Property COVER in fifo_sync at fifo_sync.v:286.33-287.22" time="0" type="COVER" location="fifo_sync.v:286.33-287.22" id="$cover$fifo_sync.v:286$390" tracefile="engine_0/trace0.vcd">
+</testcase>
+<testcase classname="cover_fifo" name="Property COVER in fifo_sync at fifo_sync.v:287.23-288.20" time="0" type="COVER" location="fifo_sync.v:287.23-288.20" id="$cover$fifo_sync.v:287$391" tracefile="engine_0/trace2.vcd">
+</testcase>
+<testcase classname="cover_fifo" name="Property COVER in fifo_sync at fifo_sync.v:288.21-289.20" time="0" type="COVER" location="fifo_sync.v:288.21-289.20" id="$cover$fifo_sync.v:288$392" tracefile="engine_0/trace1.vcd">
+</testcase>
+<testcase classname="cover_fifo" name="Property COVER in fifo_sync at fifo_sync.v:289.21-290.31" time="0" type="COVER" location="fifo_sync.v:289.21-290.31" id="$cover$fifo_sync.v:289$393" tracefile="engine_0/trace1.vcd">
+</testcase>
+<testcase classname="cover_fifo" name="Property COVER in fifo_sync at fifo_sync.v:290.32-291.34" time="0" type="COVER" location="fifo_sync.v:290.32-291.34" id="$cover$fifo_sync.v:290$394">
+<failure type="COVER" message="Property COVER in fifo_sync at fifo_sync.v:290.32-291.34 failed." />
+</testcase>
+<testcase classname="cover_fifo" name="Property COVER in fifo_sync at fifo_sync.v:295.25-296.62" time="0" type="COVER" location="fifo_sync.v:295.25-296.62" id="$cover$fifo_sync.v:295$395">
+<failure type="COVER" message="Property COVER in fifo_sync at fifo_sync.v:295.25-296.62 failed." />
+</testcase>
+<testcase classname="cover_fifo" name="Property COVER in fifo_sync at fifo_sync.v:299.25-300.46" time="0" type="COVER" location="fifo_sync.v:299.25-300.46" id="$cover$fifo_sync.v:299$396">
+<failure type="COVER" message="Property COVER in fifo_sync at fifo_sync.v:299.25-300.46 failed." />
+</testcase>
+<testcase classname="cover_fifo" name="Property COVER in fifo_sync at fifo_sync.v:303.29-304.50" time="0" type="COVER" location="fifo_sync.v:303.29-304.50" id="$cover$fifo_sync.v:303$397" tracefile="engine_0/trace3.vcd">
+</testcase>
+<testcase classname="cover_fifo" name="Property COVER in fifo_sync at fifo_sync.v:307.13-308.22" time="0" type="COVER" location="fifo_sync.v:307.13-308.22" id="$cover$fifo_sync.v:307$398">
+<failure type="COVER" message="Property COVER in fifo_sync at fifo_sync.v:307.13-308.22 failed." />
+</testcase>
+<system-out>SBY 15:54:21 [formal/fifo_sync_prove_fifo] Removing directory '/home/george/repos/verilog-fifos/fifo_sync/tb/formal/fifo_sync_prove_fifo'.
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] Removing directory '/home/george/repos/verilog-fifos/fifo_sync/tb/formal/fifo_sync_cover_fifo'.
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] Copy '/home/george/repos/verilog-fifos/fifo_sync/rtl/fifo_sync.v' to '/home/george/repos/verilog-fifos/fifo_sync/tb/formal/fifo_sync_cover_fifo/src/fifo_sync.v'.
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: smtbmc
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] base: starting process &quot;cd formal/fifo_sync_cover_fifo/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] base: finished (returncode=0)
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] prep: starting process &quot;cd formal/fifo_sync_cover_fifo/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] prep: finished (returncode=0)
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] smt2: starting process &quot;cd formal/fifo_sync_cover_fifo/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] smt2: finished (returncode=0)
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: starting process &quot;cd formal/fifo_sync_cover_fifo; yosys-smtbmc --presat --unroll -c --noprogress -t 45  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Solver: yices
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Reached cover statement at fifo_sync.v:286.33-287.22 ($cover$fifo_sync.v:286$390) in step 1.
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Reached cover statement at fifo_sync.v:289.21-290.31 ($cover$fifo_sync.v:289$393) in step 3.
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Reached cover statement at fifo_sync.v:288.21-289.20 ($cover$fifo_sync.v:288$392) in step 3.
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Reached cover statement at fifo_sync.v:287.23-288.20 ($cover$fifo_sync.v:287$391) in step 3.
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Reached cover statement at fifo_sync.v:303.29-304.50 ($cover$fifo_sync.v:303$397) in step 5.
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 15:54:21 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 12..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 13..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 14..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 15..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 16..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 17..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 18..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 19..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 20..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 21..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 22..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:00  Checking cover reachability in step 23..
+SBY 15:54:22 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:01  Checking cover reachability in step 24..
+SBY 15:54:23 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:01  Checking cover reachability in step 25..
+SBY 15:54:23 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:01  Checking cover reachability in step 26..
+SBY 15:54:23 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:02  Checking cover reachability in step 27..
+SBY 15:54:24 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:02  Checking cover reachability in step 28..
+SBY 15:54:24 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:02  Checking cover reachability in step 29..
+SBY 15:54:24 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:02  Checking cover reachability in step 30..
+SBY 15:54:25 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:03  Checking cover reachability in step 31..
+SBY 15:54:25 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:04  Checking cover reachability in step 32..
+SBY 15:54:26 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:04  Checking cover reachability in step 33..
+SBY 15:54:27 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:05  Checking cover reachability in step 34..
+SBY 15:54:28 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:06  Checking cover reachability in step 35..
+SBY 15:54:29 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:07  Checking cover reachability in step 36..
+SBY 15:54:30 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:09  Checking cover reachability in step 37..
+SBY 15:54:32 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:10  Checking cover reachability in step 38..
+SBY 15:54:34 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:12  Checking cover reachability in step 39..
+SBY 15:54:35 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:14  Checking cover reachability in step 40..
+SBY 15:54:39 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:17  Checking cover reachability in step 41..
+SBY 15:54:41 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:19  Checking cover reachability in step 42..
+SBY 15:54:43 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:21  Checking cover reachability in step 43..
+SBY 15:54:46 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:24  Checking cover reachability in step 44..
+SBY 15:54:49 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:27  Unreached cover statement at fifo_sync.v:307.13-308.22 ($cover$fifo_sync.v:307$398).
+SBY 15:54:49 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:27  Unreached cover statement at fifo_sync.v:299.25-300.46 ($cover$fifo_sync.v:299$396).
+SBY 15:54:49 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:27  Unreached cover statement at fifo_sync.v:295.25-296.62 ($cover$fifo_sync.v:295$395).
+SBY 15:54:49 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:27  Unreached cover statement at fifo_sync.v:290.32-291.34 ($cover$fifo_sync.v:290$394).
+SBY 15:54:49 [formal/fifo_sync_cover_fifo] engine_0: ##   0:00:27  Status: failed
+SBY 15:54:49 [formal/fifo_sync_cover_fifo] engine_0: finished (returncode=1)
+SBY 15:54:49 [formal/fifo_sync_cover_fifo] engine_0: Status returned by engine: FAIL
+SBY 15:54:49 [formal/fifo_sync_cover_fifo] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:28 (28)
+SBY 15:54:49 [formal/fifo_sync_cover_fifo] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:30 (30)
+SBY 15:54:49 [formal/fifo_sync_cover_fifo] summary: engine_0 (smtbmc) returned FAIL
+SBY 15:54:49 [formal/fifo_sync_cover_fifo] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

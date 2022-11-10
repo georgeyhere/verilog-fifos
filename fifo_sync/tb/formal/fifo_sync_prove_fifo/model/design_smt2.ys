@@ -1,0 +1,6 @@
+# running in formal/fifo_sync_prove_fifo/model/
+read_ilang design_prep.il
+hierarchy -smtcheck
+dffunmap
+stat
+write_smt2 -wires design_smt2.smt2

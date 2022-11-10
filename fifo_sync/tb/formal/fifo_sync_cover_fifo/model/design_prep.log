@@ -1,0 +1,107 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.22+72 (git sha1 14aa48517, clang 14.0.0-1ubuntu1 -fPIC -Os)
+
+
+-- Executing script file `design_prep.ys' --
+
+1. Executing RTLIL frontend.
+Input filename: design.il
+
+2. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module fifo_sync.
+Found 0 SCCs.
+
+3. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+
+4. Executing MEMORY_NORDFF pass (extracting $dff cells from memories).
+
+5. Executing CLK2FFLOGIC pass (convert clocked FFs to generic $ff cells).
+Modifying write port 0 on memory fifo_sync.mem: CLK=\i_clk, A=$0$memwr$\mem$fifo_sync.v:46$24_ADDR[9:0]$64, D=$0$memwr$\mem$fifo_sync.v:46$24_DATA[31:0]$65
+Replacing fifo_sync.$procdff$757 ($adff): CLK=\i_clk, D=$0\wptr[9:0], Q=\wptr
+Replacing fifo_sync.$procdff$756 ($adff): CLK=\i_clk, D=$0\rptr[9:0], Q=\rptr
+Replacing fifo_sync.$procdff$755 ($adff): CLK=\i_clk, D=$0\o_empty[0:0], Q=\o_empty
+Replacing fifo_sync.$procdff$754 ($adff): CLK=\i_clk, D=$0\o_full[0:0], Q=\o_full
+Replacing fifo_sync.$procdff$753 ($adff): CLK=\i_clk, D=$0\o_fill[10:0], Q=\o_fill
+Replacing fifo_sync.$procdff$683 ($dff): CLK=\i_clk, D=$0$formal$fifo_sync.v:290$58_CHECK[0:0]$336, Q=$formal$fifo_sync.v:290$58_CHECK
+Replacing fifo_sync.$procdff$681 ($dff): CLK=\i_clk, D=$0$formal$fifo_sync.v:289$57_CHECK[0:0]$334, Q=$formal$fifo_sync.v:289$57_CHECK
+Replacing fifo_sync.$procdff$679 ($dff): CLK=\i_clk, D=\i_rd, Q=$formal$fifo_sync.v:288$56_CHECK
+Replacing fifo_sync.$procdff$677 ($dff): CLK=\i_clk, D=\i_wr, Q=$formal$fifo_sync.v:287$55_CHECK
+Replacing fifo_sync.$procdff$676 ($dff): CLK=\i_clk, D=1'1, Q=\f_past_valid
+Replacing fifo_sync.$procdff$675 ($dff): CLK=\i_clk, D=\i_rstn, Q=$formal$fifo_sync.v:286$54_CHECK
+Replacing fifo_sync.$procdff$673 ($dff): CLK=\i_clk, D=$0$formal$fifo_sync.v:295$59_CHECK[0:0]$343, Q=$formal$fifo_sync.v:295$59_CHECK
+Replacing fifo_sync.$procdff$672 ($dff): CLK=\i_clk, D=\i_wr, Q=$past$fifo_sync.v:296$21$0
+Replacing fifo_sync.$procdff$671 ($dff): CLK=\i_clk, D=\o_full, Q=$past$fifo_sync.v:296$20$0
+Replacing fifo_sync.$procdff$670 ($dff): CLK=\i_clk, D=$0$formal$fifo_sync.v:295$59_EN[0:0]$344, Q=$formal$fifo_sync.v:299$60_EN
+Replacing fifo_sync.$procdff$669 ($dff): CLK=\i_clk, D=$0$formal$fifo_sync.v:299$60_CHECK[0:0]$349, Q=$formal$fifo_sync.v:299$60_CHECK
+Replacing fifo_sync.$procdff$668 ($dff): CLK=\i_clk, D=\o_full, Q=$past$fifo_sync.v:300$22$0
+
+6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fifo_sync..
+Removed 0 unused cells and 17 unused wires.
+<suppressed ~1 debug messages>
+
+7. Executing FORMALFF pass.
+Setting unused undefined initial value of fifo_sync.$auto$clk2fflogic.cc:165:execute$782 ($ff) from 32'x to 0
+Setting unused undefined initial value of fifo_sync.$auto$clk2fflogic.cc:168:execute$784 ($ff) from 10'x to 10'0000000000
+Setting unused undefined initial value of fifo_sync.$auto$clk2fflogic.cc:171:execute$786 ($ff) from 32'x to 0
+
+8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fifo_sync..
+
+9. Executing CHECK pass (checking for obvious problems).
+Checking module fifo_sync...
+Found and reported 0 problems.
+
+10. Executing SETUNDEF pass (replace undef values with defined constants).
+
+11. Executing OPT pass (performing simple optimizations).
+
+11.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module fifo_sync.
+<suppressed ~5 debug messages>
+
+11.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\fifo_sync'.
+<suppressed ~135 debug messages>
+Removed a total of 45 cells.
+
+11.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fifo_sync..
+Removed 3 unused cells and 48 unused wires.
+<suppressed ~4 debug messages>
+
+11.5. Finished fast OPT passes.
+
+12. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \fifo_sync..
+Removed 0 unused cells and 90 unused wires.
+<suppressed ~1 debug messages>
+
+13. Executing RTLIL backend.
+Output filename: ../model/design_prep.il
+
+End of script. Logfile hash: ff8ceb1ae2, CPU: user 0.04s system 0.01s, MEM: 13.92 MB peak
+Yosys 0.22+72 (git sha1 14aa48517, clang 14.0.0-1ubuntu1 -fPIC -Os)
+Time spent: 31% 4x opt_clean (0 sec), 14% 1x check (0 sec), ...

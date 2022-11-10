@@ -1,0 +1,20 @@
+[tasks]
+prove_fifo 
+cover_fifo
+
+[options]
+prove_fifo: mode prove
+cover_fifo: mode cover
+multiclock on 
+depth 45
+
+[engines]
+prove_fifo: smtbmc
+cover_fifo: smtbmc
+
+[script]
+read_verilog -formal fifo_sync.v
+prep -top fifo_sync
+
+[files]
+../rtl/fifo_sync.v

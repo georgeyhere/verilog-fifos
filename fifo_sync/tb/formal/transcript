@@ -1,0 +1,5 @@
+# OpenFile trace.wlf
+do ../formal_wave.do
+add wave -position end  trace:/fifo_sync/f_fill
+add wave -position end  trace:/fifo_sync/wptr
+add wave -position end  trace:/fifo_sync/rptr

@@ -1,0 +1,412 @@
+initial
+assume (= [$auto$clk2fflogic.cc:148:execute$mem#0#past_clk#/i_clk$777] false)
+assume (= [$auto$clk2fflogic.cc:164:execute$mem#0#en_q$781] #b00000000000000000000000000000000)
+assume (= [$auto$clk2fflogic.cc:167:execute$mem#0#addr_q$783] #b1000000000)
+assume (= [$auto$clk2fflogic.cc:170:execute$mem#0#data_q$785] #b00000000000000000000000000000000)
+assume (= [$auto$clk2fflogic.cc:62:sample_control$$auto$rtlil.cc:2371:Not$800#sampled$801] false)
+assume (= [$auto$clk2fflogic.cc:86:sample_data$$0/o_empty[0:0]#sampled$827] false)
+assume (= [$auto$clk2fflogic.cc:86:sample_data$$0/o_fill[10:0]#sampled$863] #b00000000000)
+assume (= [$auto$clk2fflogic.cc:86:sample_data$$0/o_full[0:0]#sampled$845] false)
+assume (= [$auto$clk2fflogic.cc:86:sample_data$$0/rptr[9:0]#sampled$809] #b0000000000)
+assume (= [$auto$clk2fflogic.cc:86:sample_data$$0/wptr[9:0]#sampled$791] #b0000000000)
+assume (= [$auto$clk2fflogic.cc:86:sample_data$/f_past_valid#sampled$919] true)
+assume (= [$auto$clk2fflogic.cc:86:sample_data$/o_empty#sampled$825] true)
+assume (= [$auto$clk2fflogic.cc:86:sample_data$/o_fill#sampled$861] #b00000010000)
+assume (= [$auto$clk2fflogic.cc:86:sample_data$/o_full#sampled$843] true)
+assume (= [$auto$clk2fflogic.cc:86:sample_data$/rptr#sampled$807] #b1111101110)
+assume (= [$auto$clk2fflogic.cc:86:sample_data$/wptr#sampled$789] #b0101111100)
+assume (= [$formal$fifo_sync.v:148$29_EN] false)
+assume (= [$formal$fifo_sync.v:154$30_EN] false)
+assume (= [$formal$fifo_sync.v:168$36_EN] false)
+assume (= [$formal$fifo_sync.v:192$48_EN] false)
+assume (= [$formal$fifo_sync.v:195$49_EN] false)
+assume (= [$formal$fifo_sync.v:271$51_EN] false)
+assume (= [$formal$fifo_sync.v:274$52_EN] false)
+assume (= [$formal$fifo_sync.v:279$53_EN] false)
+assume (= [_witness_.anyinit_procdff_685] false)
+assume (= [_witness_.anyinit_procdff_686] false)
+assume (= [_witness_.anyinit_procdff_687] false)
+assume (= [_witness_.anyinit_procdff_688] false)
+assume (= [_witness_.anyinit_procdff_689] false)
+assume (= [_witness_.anyinit_procdff_690] false)
+assume (= [_witness_.anyinit_procdff_691] false)
+assume (= [_witness_.anyinit_procdff_692] false)
+assume (= [_witness_.anyinit_procdff_693] false)
+assume (= [_witness_.anyinit_procdff_695] false)
+assume (= [_witness_.anyinit_procdff_697] false)
+assume (= [_witness_.anyinit_procdff_699] true)
+assume (= [_witness_.anyinit_procdff_701] false)
+assume (= [_witness_.anyinit_procdff_703] false)
+assume (= [_witness_.anyinit_procdff_705] false)
+assume (= [_witness_.anyinit_procdff_707] false)
+assume (= [_witness_.anyinit_procdff_709] false)
+assume (= [_witness_.anyinit_procdff_711] false)
+assume (= [_witness_.anyinit_procdff_713] false)
+assume (= [_witness_.anyinit_procdff_715] false)
+assume (= [_witness_.anyinit_procdff_717] false)
+assume (= [_witness_.anyinit_procdff_719] false)
+assume (= [_witness_.anyinit_procdff_721] false)
+assume (= [_witness_.anyinit_procdff_723] false)
+assume (= [_witness_.anyinit_procdff_724] false)
+assume (= [_witness_.anyinit_procdff_725] #b00000000000000000000000000000000)
+assume (= [_witness_.anyinit_procdff_726] true)
+assume (= [_witness_.anyinit_procdff_727] true)
+assume (= [_witness_.anyinit_procdff_728] #b00000010000)
+assume (= [_witness_.anyinit_procdff_729] #b10000000000000000000000000000000)
+assume (= [_witness_.anyinit_procdff_730] false)
+assume (= [_witness_.anyinit_procdff_732] false)
+assume (= [_witness_.anyinit_procdff_734] false)
+assume (= [_witness_.anyinit_procdff_736] false)
+assume (= [_witness_.anyinit_procdff_738] false)
+assume (= [_witness_.anyinit_procdff_740] false)
+assume (= [_witness_.anyinit_procdff_742] false)
+assume (= [_witness_.anyinit_procdff_743] false)
+assume (= [_witness_.anyinit_procdff_744] false)
+assume (= [_witness_.anyinit_procdff_745] true)
+assume (= [_witness_.anyinit_procdff_746] true)
+assume (= [_witness_.anyinit_procdff_748] false)
+assume (= [f_clk_count] #b00000)
+assume (= [f_past_valid_gbl] true)
+assume (= (select [mem] #b1111101110) #b00000000000000000000000000000000)
+assume (= (select [mem] #b1101111110) #b00111111111110111111111111111111)
+assume (= (select [mem] #b1101111101) #b10111111111111111111111111111111)
+assume (= (select [mem] #b1111101111) #b10000000000000000000000000000000)
+assume (= (select [mem] #b1111110000) #b00000000000000000000000000000000)
+assume (= (select [mem] #b1111110001) #b10000000000000000000000000000000)
+assume (= (select [mem] #b1111110010) #b00000000000000000000000000000000)
+assume (= (select [mem] #b1111110011) #b10000000000000000000000000000000)
+assume (= (select [mem] #b1111110100) #b00000000000000000000000000000000)
+assume (= (select [mem] #b1111110101) #b10000000000000000000000000000000)
+assume (= (select [mem] #b1111110110) #b00000000000000000000000000000000)
+assume (= (select [mem] #b1111110111) #b10000000000000000000000000000000)
+assume (= (select [mem] #b1111111000) #b00000000000000000000000000000000)
+assume (= (select [mem] #b1111111001) #b10000000000000000000000000000000)
+assume (= (select [mem] #b1111111010) #b00000000000000000000000000000000)
+assume (= (select [mem] #b1111111011) #b10000000000000000000000000000000)
+assume (= (select [mem] #b1111111100) #b00000000000000000000000000000000)
+assume (= (select [mem] #b1111111101) #b10000000000000000000000000000000)
+assume (= (select [mem] #b1111111110) #b00000000000000000000000000000000)
+assume (= (select [mem] #b1111111111) #b00111111111110111111111111111111)
+assume (= (select [mem] #b0000000000) #b10011111111111111111111111111111)
+
+state 0
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 1
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 2
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 3
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 4
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 5
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 6
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 7
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 8
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 9
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 10
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 11
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 12
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 13
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 14
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 15
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 16
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 17
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 18
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 19
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 20
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 21
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 22
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 23
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 24
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 25
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 26
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 27
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 28
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 29
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 30
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 31
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 32
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 33
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 34
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 35
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] true)
+
+state 36
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] true)
+
+state 37
+assume (= [i_clk] true)
+assume (= [i_data] #b10111111111111111111111111111111)
+assume (= [i_rd] false)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 38
+assume (= [i_clk] false)
+assume (= [i_data] #b10111111111111111111111111111111)
+assume (= [i_rd] false)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 39
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] false)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 40
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] false)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 41
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] false)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 42
+assume (= [i_clk] true)
+assume (= [i_data] #b10111111111111111111111111111111)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 43
+assume (= [i_clk] false)
+assume (= [i_data] #b10111111111111111111111111111111)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] false)
+
+state 44
+assume (= [i_clk] true)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] true)
+assume (= [i_rstn] true)
+assume (= [i_wr] true)
+
+state 45
+assume (= [i_clk] false)
+assume (= [i_data] #b00000000000000000000000000000000)
+assume (= [i_rd] false)
+assume (= [i_rstn] false)
+assume (= [i_wr] false)

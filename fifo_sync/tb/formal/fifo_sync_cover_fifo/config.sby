@@ -1,0 +1,14 @@
+[options]
+mode cover
+multiclock on 
+depth 45
+
+[engines]
+smtbmc
+
+[script]
+read_verilog -formal fifo_sync.v
+prep -top fifo_sync
+
+[files]
+../rtl/fifo_sync.v

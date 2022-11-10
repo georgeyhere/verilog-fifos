@@ -1,0 +1,7 @@
+# running in formal/fifo_sync_prove_fifo/src/
+read_verilog -formal fifo_sync.v
+prep -top fifo_sync
+
+hierarchy -smtcheck
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il
